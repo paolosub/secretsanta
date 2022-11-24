@@ -4,7 +4,7 @@
     <head>
 
         <meta charset="utf-8" />
-        <title>Secret Santa Generator</title>
+        <title>Generatore di Secret Santa</title>
 
         <script src="vendors/Lodash-3.10.1.js"></script>
         <script src="vendors/Cryptojs.aes-3.1.2.js"></script>
@@ -154,17 +154,18 @@
 
             <div class="part" style="overflow-y: auto">
                 <div class="instructions">
-                    <h1><img src="assets/mistletoe.png" style="vertical-align: middle" /> Secret Santa Generator</h1>
-                    <p>No signup, no email, no bullshit. Just a straightforward <a href="https://github.com/arcanis/secretsanta">open-source</a> tool to help you generate your secret santa pairings. One static page, and that's it.</p>
-                    <p>In the most common case (no exclusion rules, pair each guest with another at random), enter the name of your guests one line at a time. Once done, press "generate" and you're all set: send the generated links to your guests (by mail, chat, whatever floats your boat) and their pairing will be revealed to them (and only them) once they open the link.</p>
-                    <h2>Where does this tool come from?</h2>
-                    <p>I wanted to make a Secret Santa over Facebook without having to reveal to anyone my guests email addresses (so nothing that would require a backend). I also wanted not to know who was paired with me, so I had to find a way to somehow obfuscate the information. And being a developer, well, my first thought was "Let's AES it, for fun and profits!". Classic.</p>
+                    <h1><img src="assets/mistletoe.png" style="vertical-align: middle" /> Genratore di Secret Santa (Babbo Natale segreto)</h1>
+                    <p>Nessuna iscrizione, nessuna e-mail, nessun trucchetto. Solo un semplice strumento <a href="https://github.com/arcanis/secretsanta">open-source</a> per aiutarti a generare gli abbinamenti del tuo Babbo Natale segreto. Solo questa semplice pagina e il tuo browser. È tutto.</p>
+                    <p>Nel caso più comune (nessuna regola di esclusione, ogni ospite viene abbinato a un altro a caso), inserisci il nome dei tuoi ospiti una riga alla volta. Una volta fatto, premi "genera" e il gioco è fatto: invia i link generati ai tuoi ospiti (via mail, chat, come preferisci) e il loro abbinamento sarà rivelato a loro (e solo a loro) una volta aperto il link.</p>
+                    <h2>Da dove viene questo strumento?</h2>
+                    <p>Ho trovato questo strumento online, in inglese, creato da uno sviluppatore che si chiama Maël Nison e che molto gentilmente l'ha reso disponibile come software Open Source. </p>
+                    <p>Allora ho pensato di tradurlo in italiano, a beneficio dei miei compatrioti che preferiscono esprimersi nella nostra lingua natale. </p>
                 </div>
             </div>
 
             <form id="form" class="part">
                 <textarea id="input" class="input" autofocus></textarea>
-                <button type="submit" class="generate">Generate your pairings</button>
+                <button type="submit" class="generate">Genera i tuoi abbinamenti</button>
                 <div id="result" class="result none"></div>
             </form>
 
